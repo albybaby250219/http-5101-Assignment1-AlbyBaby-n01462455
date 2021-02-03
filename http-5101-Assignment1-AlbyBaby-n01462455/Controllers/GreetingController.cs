@@ -20,5 +20,16 @@ namespace http_5101_Assignment1_AlbyBaby_n01462455.Controllers
             return "Hello World!";
         }
 
+        /// <summary>
+        /// it is a post request to return a simple greeting
+        /// Get/api/greeting{id}
+        /// </summary>
+        /// <returns>"Greetings to {id} people" </returns>
+        public string get(int id)
+        {
+            int number = id;
+            string message = "Greetings to " + number.ToString() + " people";
+            return message;
+        }
     }
 }
